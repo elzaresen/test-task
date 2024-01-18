@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A test task for EVOTYM client
+
 
 ## Getting Started
 
@@ -16,21 +17,42 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Hello! Here are the answers to the questions provided
 
-To learn more about Next.js, take a look at the following resources:
+### PWA Experience:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Q: Describe any experience you have with developing Progressive Web Applications (PWAs).**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- A: Recently I've created a PWA that utilized user's phone camera to scan tickets QR codes at a concert.
 
-## Deploy on Vercel
+- **Discuss your conclusions, including the pros and cons of using PWAs.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- A: PWAs are great to hide browser's interface, they can be installed as apps. has access to device hardware (as long there is a browser API for that). Cons: still a browser,
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Supabase Experience:
+
+- **Q: Detail any experience you have working with Supabase.**
+- A: I have a little experience using it as a prototyping tool for the recent project I had. I found it quite dev friendly
+
+- **Q: Share your thoughts on the advantages and disadvantages of using Supabase in web development projects.**
+- A: It allows developers not to worry about backend setting and deployment.  Some does Firebase, but it's open-source. Great tool for small and middle projects. Not sure how it scales to larger projects though. The only disadvantage I can think of now is that you still don't *own* the backend. If someone in supabase flops, your entire database may be leaked. But same may happen to a self-hosted solutions. It really depends on the "flop percentage", which is still high with self-hosted solutions.
+
+### Security with Supabase:
+
+- **Q: Explain how you manage security when working with Supabase.**
+- A: At a base, supabase of course has built-in security solutions. One of them is Row-Level Security. Also it's important to secure data per userrole. Supabase itself has a bunch of them. Also, you need to be careful when setting secrets and API keys, so they remain only server side (use environment variales, and in NextJS 14 avoid naming them as ```NEXT_PUBLIC_```). 
+
+- **Q: Describe the strategies you employ to ensure that only authorized users can access certain data.**
+- A: You can create a policy that restricts a particular data to "authenticated" user
+
+### Offline Support in PWAs:
+
+- **Q: Have you implemented offline support in PWA applications using React Query and PWA features?  If so, describe your approach and the challenges you faced.**
+- A: No, but I'm familiar with technology
+
+
+### PS: About the project
+
+Is project written entirely using Styled Components? Is it possible to switch to for ex. tailwind? It's a bit challenging using styled-components if you want to use Next's server components
